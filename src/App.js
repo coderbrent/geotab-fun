@@ -4,7 +4,7 @@ import API from 'mg-api-node'
 
 function App() {
   const [vehicle, setVehicle] = useState('');
-  const api = new API('brent@redbanklimo.com', 'Zsw0wers!', 'Redbanklimo')
+  const api = new API('REACT_APP_API_USER', 'REACT_APP_API_PASS', 'REACT_APP_API_DB')
   
   const login = () => {  
     api.authenticate((err, result) => {
